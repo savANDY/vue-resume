@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app class="elevation-0" color="transparent" dark>
       <v-spacer></v-spacer>
-      <div class="up" style="visibility: hidden">
+      <div class="up">
         <div class="content">
           <h1>{{ logo }}</h1>
         </div>
@@ -11,40 +11,9 @@
     </v-app-bar>
 
     <v-main>
+      <HelloWorld />
       <v-container>
-        <v-row justify="center" no-gutters>
-          <v-col col-6>
-            <v-card
-              class="d-flex justify-center mb-6 v-sheet--outlined"
-              color="transparent"
-              flat
-              tile
-            >
-              <v-row>
-                <v-col col-6>
-                  <v-card
-                    class="pa-2 v-sheet--outlined"
-                    color="transparent"
-                    tile
-                  >
-                    <HelloWorld />
-                  </v-card>
-                </v-col>
-
-                <v-col col-6>
-                  <v-card class="v-sheet--outlined" color="transparent" tile>
-                    <ProgrammerPhoto />
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-row justify="center" no-gutters>
-          <v-col col-6 class="pl-10 pr-10">
-            <Experience />
-          </v-col>
-        </v-row>
+        <Experience />
       </v-container>
     </v-main>
 
@@ -120,7 +89,6 @@ main {
 <script>
 import Experience from "./components/Experience";
 import HelloWorld from "./components/HelloWorld";
-import ProgrammerPhoto from "./assets/undraw_Freelancer_re_irh4.svg?inline";
 
 export default {
   name: "App",
@@ -128,12 +96,12 @@ export default {
   components: {
     Experience,
     HelloWorld,
-    ProgrammerPhoto,
   },
 
   data: () => ({
     logo: "☺️",
     savandy: "SAVANDY",
+    unicId: "article_" + Date.now(),
   }),
   methods: {
     repeatLogo() {

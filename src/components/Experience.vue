@@ -12,7 +12,7 @@
             <v-icon left> far fa-handshake </v-icon>
             Certiorem
           </v-flex>
-          <v-flex xs12 class="d-flex justify-end">
+          <v-flex xs12 class="d-flex justify-start">
             <small> JUN 2018 - NOW</small>
           </v-flex>
         </v-layout>
@@ -21,9 +21,9 @@
         <v-layout row>
           <v-flex xs12 class="d-flex justify-start">
             <v-icon left> far fa-handshake </v-icon>
-          Odd Panda Design
+            Odd Panda Design
           </v-flex>
-          <v-flex xs12 class="d-flex justify-end">
+          <v-flex xs12 class="d-flex justify-start">
             <small> FEB 2018 - JUN 2018</small>
           </v-flex>
         </v-layout>
@@ -34,7 +34,7 @@
             <v-icon left> far fa-handshake </v-icon>
             MP-Stor
           </v-flex>
-          <v-flex xs12 class="d-flex justify-end">
+          <v-flex xs12 class="d-flex justify-start">
             <small> FEB 2016 - JUN 2016</small>
           </v-flex>
         </v-layout>
